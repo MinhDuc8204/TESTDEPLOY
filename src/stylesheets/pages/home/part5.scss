@@ -1,0 +1,44 @@
+@use "../../abstracts/" as *;
+
+.part5{
+    background: #FFFFFF;
+}
+.part5 .text1{
+    @include font(45px, 600);
+    color: $black;
+    @include lg{
+        @include font(32px, 600);
+    }
+    @include sm{
+        @include font(24px, 600);
+    }
+}
+.part5-container1{
+    padding: 44px;
+}
+.part5-container1 .text2{
+    max-width: 792px;
+    color: $text-grey;
+    margin-top: 24px;
+    @include font(16px, 400);
+    @include lg{
+        @include font(14px, 600);
+    }
+    @include sm{
+        @include font(12px, 600);
+    }
+}
+.part5-container2{
+    @include between;
+    // width: 100%;
+    padding: 44px 0px;
+    margin: 0px 15%; 
+    flex-wrap: wrap;
+}
+.part5_icon img{
+    min-width: 66px;
+    height: auto;
+}
+.part5_icon{
+    margin: 7px 44px;
+}

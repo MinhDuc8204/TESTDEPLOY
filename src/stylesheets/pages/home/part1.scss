@@ -1,0 +1,46 @@
+@use "../../abstracts/" as *;
+
+.part1{
+    @include center-element;   
+}
+.part1-container{
+    margin-top: 8%;
+    width: 100%;
+    @include xs{
+        margin-top: 65px; 
+    }
+}
+.part1 .text1{    
+    color: $black
+}
+.part1 .text2{    
+    margin-top: 10px;
+    @include gradient;    
+}
+.part1 .text1, .part1 .text2{
+    @include font(57px, 600);
+}
+.part1 .text3{
+    @include font(16px, 500);
+    max-width: 607px;
+    margin-top: 20px;
+}
+.part1-button{
+    @include blackbutton;    
+    size: 16px;
+    margin-top: 30px;    
+}
+
+@include lg{
+    .part1 .text1, .part1 .text2{
+        @include font(45px, 600);
+    }
+    .part1 .text1, .part1 .text3{
+        @include font(13px, 500);
+    }
+}
+@include sm{
+    .part1 .text1, .part1 .text2{
+        @include font(24px, 600);
+    }    
+}
