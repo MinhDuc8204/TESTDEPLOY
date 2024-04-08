@@ -1,0 +1,31 @@
+@use "../../abstracts/" as *;
+
+.training{
+    margin-top: 20rem;
+    @include xs{
+      margin-top: 13rem;
+    }
+}
+.training-button{
+    background: white;
+    border: 1px #E6E0EC solid;
+    border-radius: 25px;
+    padding: 10px 15px;
+    box-shadow: 0px 5px 3px 0px #0000000D;
+    margin-bottom: 30px;
+}
+.training .text1, .training .text2, .training .text3{
+    @include font(5.7rem, 600);
+    @include sm{
+      @include font(2.4rem, 600);
+    }
+}
+.training .text1{
+    @include gradient
+}
+.training .text2, .training .text3{
+    color: $black;
+    margin-left: 1rem;
+}
+
+

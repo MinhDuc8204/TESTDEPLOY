@@ -1,0 +1,47 @@
+@use "../../abstracts/" as *;
+
+.intro{
+  @include center-element;
+  margin-bottom: -7rem;
+}
+.intro-container{
+  margin-top: 8rem;
+  width: 100%;
+  @include xs{
+      margin-top: 6rem;
+  }
+}
+.intro .text1{
+    color: $black;
+}
+.intro .text2{
+  margin-top: 1rem;
+  @include gradient;
+}
+.intro .text1, .intro .text2{
+    @include font(6rem, 550);
+
+}
+.intro .text3{
+    @include font(1.6rem, 500);
+    max-width: 607px;
+    margin-top: 2rem;
+}
+.intro-button{
+    @include blackbutton;
+    margin-top: 3rem;
+
+}
+@include lg{
+  .intro .text1, .intro .text2{
+      @include font(4.5rem, 600);
+  }
+  .intro .text3{
+      @include font(1.3rem, 500);
+  }
+}
+@include sm{
+  .intro .text1, .intro .text2{
+      @include font(2.4rem, 600);
+  }
+}

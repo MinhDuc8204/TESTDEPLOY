@@ -1,0 +1,69 @@
+@use "../../abstracts/" as *;
+
+.chat{
+    @include center-element;
+    width: 100%;
+    margin-top: 20rem;
+    @include sm{
+      margin-top: 10rem;
+    }
+}
+.chat-container{
+    background-image: url(../assets/images/desktop/chat.png);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-color: white;
+    background-size: cover;
+    width: 80%;
+    padding-top: 30%;
+    border-radius: 10px;
+    border: 1px solid #E6E0EC;
+    @include shadow;
+}
+.chat .panel{
+    background-image: url(../assets/images/desktop/panel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    max-width: 452px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 95%);
+    border-radius: 10px;
+    border: 1px solid #E6E0EC;
+    @include shadow;
+    @include md{
+        max-width: 313px;
+        top: 120%;
+    }
+    @include sm{
+        max-width: 205px;
+        top: 125%;
+    }
+
+}
+.chat .panel .text1{
+    margin-top: 14rem;
+    max-width: 324px;
+    @include font(2.4rem, 500);
+    @include sm{
+      @include font(1.1rem, 500);
+      margin-top: 35%
+    }
+}
+.chat .panel .button{
+    @include font(1.6rem, 500);
+    @include shadow;
+    @include blackbutton;
+    background-color: #252739;
+    color: white;
+    margin-top: 7%;
+    max-width: 196px;
+    height: 18%;
+    padding: 3% 6%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    @include sm{
+        @include font(1.2rem, 500);
+    }
+}
