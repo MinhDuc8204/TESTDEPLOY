@@ -23,6 +23,14 @@ button{
   border-radius: 10px;
   box-shadow: 1px 15px 11px 0px #0000001A;
   border: none;
+  transition: all 0.5s ease-in-out;
+}
+button:hover{
+  background: linear-gradient(180deg, #252739 0%, #8A6CF9 233.93%);
+}
+.intro-button:hover{
+  
+  box-shadow: 1px 15px 11px 0px #0000001A 0 0 0 2px white inset;
 }
 p, h2, img{
   margin: 0px auto;
